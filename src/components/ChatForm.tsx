@@ -8,7 +8,7 @@ const ChatForm: React.FC = () => {
     e.preventDefault();
 
     try {
-      for (let i = 0; i < 10; i++) {
+      // for (let i = 0; i < 10; i++) {
         let uniqueId = new Date().getTime() + name;
         console.log(uniqueId);
         const response = await fetch("/api/chat", {
@@ -27,7 +27,7 @@ const ChatForm: React.FC = () => {
         } else {
           console.error("Error:", response.status);
         }
-      }
+      // }
     } catch (error) {
       console.error("Error:", error);
     }

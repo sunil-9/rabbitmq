@@ -142,7 +142,7 @@ createChatQueue("theChatQueue");
 // consumeFromRabbitMq();
 //provide the callback function to consumeFromRabbitMq
 consumeFromRabbitMq(async (data: any) => {
-  console.log(data, "data")
+  console.log(data, "data");
   const model = new Chat(data);
   await model.save();
   console.log("Data saved in the database");
@@ -174,7 +174,9 @@ const post = async (
     // Publish the message to RabbitMQ
     await publishToRabbitMq(req.body);
 
-    return res.status(200).json({ success: true, data });
+    return res
+      .status(200)
+      .json({ success: true, message: "Message published to RabbitMQ" });
   } catch (e: any) {
     console.log(e, "error");
     return res.status(200).json({
