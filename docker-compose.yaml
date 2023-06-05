@@ -1,6 +1,6 @@
 version: "3"
 services:
-# graphana dashboard id :10991
+  # graphana dashboard id :10991
   grafana:
     image: grafana/grafana-enterprise
     container_name: grafana
@@ -21,8 +21,19 @@ services:
       - ./rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf
     environment:
       RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS: "-rabbitmq_prometheus"
+      # rabbitmq-plugins enable rabbitmq_prometheus rabbitmq_management rabbitmq_management_agent rabbitmq_web_dispatch
     networks:
       - my-network
+  
+  prometheus:
+      image: prom/prometheus
+      container_name: prometheus
+      ports:
+        - 9090:9090
+      volumes:
+        - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      networks:
+        - my-network
 
 networks:
   my-network:
