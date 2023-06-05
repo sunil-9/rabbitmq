@@ -1,0 +1,17 @@
+[
+  {
+    "_id": "798e30be-9dad-4260-adbc-112255b07dc9",
+    "name": "(Global Env)",
+    "default": false,
+    "global": true,
+    "sortNum": -2,
+    "created": "2023-06-04T05:58:40.048Z",
+    "modified": "2023-06-04T05:58:40.048Z",
+    "data": [
+      {
+        "name": "local",
+        "value": "http://localhost:3000"
+      }
+    ]
+  }
+]

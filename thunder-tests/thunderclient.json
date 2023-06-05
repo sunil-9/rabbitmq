@@ -1,0 +1,35 @@
+[
+  {
+    "_id": "5efae0ec-67bc-472d-9440-b4e45dceec6b",
+    "colId": "155627e8-0a9a-48f4-9d08-109f75f5717d",
+    "containerId": "",
+    "name": "add message",
+    "url": "{{local}}/api/chat",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2023-06-04T05:58:23.335Z",
+    "modified": "2023-06-04T06:01:13.549Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\":\"two\",\n  \"message\":\"two message\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "4288fb03-36ee-43dd-b4a5-338e5adb8728",
+    "colId": "155627e8-0a9a-48f4-9d08-109f75f5717d",
+    "containerId": "",
+    "name": "show all chats",
+    "url": "{{local}}/api/chat",
+    "method": "GET",
+    "sortNum": 40000,
+    "created": "2023-06-04T05:58:34.534Z",
+    "modified": "2023-06-04T06:01:02.348Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  }
+]
