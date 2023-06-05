@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project to demonestrate the use of Rabbit MQ .
+This is a [Next.js](https://nextjs.org/) project to demonestrate the use of **Rabbit MQ** .
 
 ## Install thunderclient extension for testing api
 
