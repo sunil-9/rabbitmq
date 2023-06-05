@@ -2,8 +2,7 @@ import amqp from "amqplib/callback_api";
 
 // RabbitMQ connection configuration
 const rabbitMqConfig = {
-  // url: "amqp://guest:admin@45.79.117.164", // RabbitMQ URL
-  url:`amqp://${process.env.RABBIT_MQ_USER}:${process.env.RABBIT_MQ_PASSWORD}@${process.env.RABBIT_MQ_HOST}:5672`,
+  url:`amqp://${process.env.RABBIT_MQ_USER}:${process.env.RABBIT_MQ_PASSWORD}@${process.env.RABBIT_MQ_HOST}:5672`, //url
   queue: "theChatQueue", // Queue name
 };
 
